@@ -9,14 +9,14 @@ def home(request):
 
 
 def password(request):
-    # defult Data
+    # Defult Data
     sting = "abcdefghijklmnopqrstuvwxyz"
     num = "0123456789"
     sep = "!@#$%^&*()_"
     inp = request.GET
 
-    # processing
-    tpassword = ""
+    # Processing
+    thepassword = ""
     characters = list(sting)
     lenght = int(inp.get("length", "8"))
 
@@ -27,5 +27,7 @@ def password(request):
     if inp.get("sep"):
         characters.extend(list(sep))
     for x in range(lenght):
-        tpassword += random.choice(characters)
-    return render(request, "generator/password.html", {"password": tpassword})
+        thepassword += random.choice(characters)
+
+
+    return render(request, "generator/password.html", {"password": thepassword })
