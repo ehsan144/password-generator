@@ -6,15 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Django - Password Generator</title>
-    <style>
-        body{
-            text-align : center;
-            display: block ;
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 <body>
-<h2>hello Django</h2>
-<a href="{% url 'password' %}">Go to Password Generator</a>
+
+    <div class="container text-center mt-5 card p-5 col-6">
+        <h2 class="fs-1 fw-bold text-capitalize badge rounded-pill bg-dark" >hello to ehsan144</h2>
+        <a class="btn btn-outline-primary btn-lg mt-3" href="{% url 'password' %}">Go to Password Generator</a>
+        
+    </div>
+
 </body>
 </html>
